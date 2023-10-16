@@ -2,13 +2,13 @@ package org.example;
 
 import java.util.ArrayList;
 
-public class Box {
+public class Box <T extends Fruit> {
 
     private ArrayList<T> fructs;
 
     private int barCode;
 
-    private static int counter = 10050050;
+    private static int counter = 100;
 
     public Box() {
         this.barCode = counter++;

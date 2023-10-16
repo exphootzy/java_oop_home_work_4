@@ -8,13 +8,8 @@ public class Apple extends Fruit {
         super(1.0f);
         this.name = "apple";
     }
-
-
-
     @Override
     public String toString() {
         return name;
     }
-}
-
 }

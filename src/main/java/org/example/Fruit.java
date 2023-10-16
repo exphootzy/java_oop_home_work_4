@@ -1,6 +1,6 @@
 package org.example;
 
-public class Fruit {
+public abstract class Fruit {
 
     private float weight;
 

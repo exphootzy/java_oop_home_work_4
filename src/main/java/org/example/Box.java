@@ -6,12 +6,12 @@ public class Box <T extends Fruit> {
 
     private ArrayList<T> fructs;
 
-    private int barCode;
+    private int numId;
 
     private static int counter = 100;
 
     public Box() {
-        this.barCode = counter++;
+        this.numId = counter++;
         this.fructs = new ArrayList<T>();
     }
 
@@ -21,7 +21,7 @@ public class Box <T extends Fruit> {
     public String toString() {
         return "Box{" +
                 "fructs=" + fructs +
-                ", barCode=" + barCode +
+                ", numId=" + numId +
                 '}';
     }
 
@@ -44,7 +44,7 @@ public class Box <T extends Fruit> {
     public void moveFruit(Box<T> box) {
         box.fructs.addAll(this.fructs);
         this.fructs.clear();
-        System.out.printf("Fruit are moveded from box with barcode %d to box with barcode %d\n", this.barCode, box.barCode);
+        System.out.printf("Fruit are moveded from box with numId %d to box with numId %d\n", this.numId, box.numId);
     }
 
 }
